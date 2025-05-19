@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,6 @@
 		/>
 		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
-
 	<body>
 		<header>
 			<nav>
@@ -54,19 +53,108 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Chamufem</h1>
-			<h2>Difusion y Prensa</h2>
+			<div class="form-container">
+				<h1>Chamufem</h1>
+				<h2>Formularios para Difusión y Prensa</h2>
 
-			<h2>¿Qué querés difundir?</h2>
+				<div class="forms-wrapper">
+					<div class="form-section">
+						<h3>Formulario para Artistas y Bandas</h3>
+						<form class="prensa-form">
+							<div class="form-group">
+								<label for="nombre-artista"
+									>Nombre del Artista/Banda</label
+								>
+								<input
+									type="text"
+									id="nombre-artista"
+									name="nombre-artista"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="genero">Género Musical</label>
+								<input
+									type="text"
+									id="genero"
+									name="genero"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="redes-sociales"
+									>Redes Sociales</label
+								>
+								<input
+									type="text"
+									id="redes-sociales"
+									name="redes-sociales"
+									placeholder="Instagram, Facebook, etc."
+								/>
+							</div>
+							<div class="form-group">
+								<label for="bio-artista">Biografía</label>
+								<textarea
+									id="bio-artista"
+									name="bio-artista"
+									required
+								></textarea>
+							</div>
+							<button type="submit">
+								Enviar Formulario de Artista
+							</button>
+						</form>
+					</div>
 
-			<p>
-				<a href="formulario-artistas.html">Banda o Artista</a>
-			</p>
-			<p>
-				<a href="formulario-eventos.html"
-					>Otro tipo de proyecto, evento o información</a
-				>
-			</p>
+					<div class="form-section">
+						<h3>Formulario para Eventos</h3>
+						<form class="prensa-form">
+							<div class="form-group">
+								<label for="nombre-evento"
+									>Nombre del Evento/Proyecto</label
+								>
+								<input
+									type="text"
+									id="nombre-evento"
+									name="nombre-evento"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="fecha">Fecha del Evento</label>
+								<input
+									type="date"
+									id="fecha"
+									name="fecha"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="lugar">Lugar</label>
+								<input
+									type="text"
+									id="lugar"
+									name="lugar"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="descripcion-evento"
+									>Descripción del Evento</label
+								>
+								<textarea
+									id="descripcion-evento"
+									name="descripcion-evento"
+									required
+								></textarea>
+							</div>
+							<button type="submit">
+								Enviar Formulario de Evento
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<div class="copyright">
