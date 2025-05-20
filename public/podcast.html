@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
 	<body>
-    	<header>
+		<header>
 			<nav>
 				<div class="logo-contenedor">
 					<img src="imagen/chamufem.png" alt="logo" />
@@ -53,16 +53,53 @@
 			</nav>
 		</header>
 
-      <main>
-        <h2>🎧 Escuchá Chamufem en Spotify</h2>
-        <iframe style="border-radius:12px"
-          src="<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/136VvaKXbZPrRfuQSQ9na3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>"
-          width="100%" height="152" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </main>
-	  <footer>
+		<main>
+			<div class="podcast-container">
+				<div class="podcast-header">
+					<img
+						src="imagen/chamufem.png"
+						alt="Logo Chamufem"
+						class="podcast-logo"
+					/>
+					<img
+						src="imagen/spotify-logo.png"
+						alt="Logo Spotify"
+						class="spotify-logo"
+					/>
+				</div>
+				<h2>🎧 Escuchá Chamufem en Spotify</h2>
+				<div class="podcast-description">
+					<p>
+						Descubrí historias únicas y voces auténticas en nuestro
+						podcast. Periodismo visceral que te conecta con la
+						realidad.
+					</p>
+				</div>
+				<div class="podcast-player">
+					<iframe
+						style="border-radius: 12px"
+						src="https://open.spotify.com/embed/show/136VvaKXbZPrRfuQSQ9na3?utm_source=generator"
+						width="100%"
+						height="352"
+						frameborder="0"
+						allowfullscreen=""
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+						loading="lazy"
+					>
+					</iframe>
+				</div>
+				<div class="podcast-preview">
+					<video width="100%" controls>
+						<source
+							src="videos/chamufem_video.mp4"
+							type="video/mp4"
+						/>
+						Tu navegador no soporta el elemento de video.
+					</video>
+				</div>
+			</div>
+		</main>
+		<footer>
 			<div class="copyright">
 				<p>&copy; 2025 Chamufem. Todos los derechos reservados.</p>
 			</div>
