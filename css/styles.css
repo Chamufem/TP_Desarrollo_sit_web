@@ -33,9 +33,9 @@ header {
 	background-color: var(--color-bg);
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	padding: 0;
+	min-height: 30px;
 	height: auto;
-	min-height: 70px;
+	padding: 10px 10px;
 	display: flex;
 	align-items: flex-start;
 }
@@ -59,7 +59,7 @@ nav {
 }
 
 .logo-contenedor img {
-	width: 100px;
+	width: 50px;
 	height: auto;
 }
 
@@ -113,7 +113,8 @@ main {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-bg-main);
-	padding: 0 20px;
+	padding: 80px 20px 80px 20px;
+	box-sizing: border-box;
 }
 
 /* Hero Section */
@@ -176,7 +177,7 @@ main {
 	align-items: center;
 	gap: 2rem;
 	max-width: 90%;
-	margin: 4rem auto;
+	margin: 0 auto;
 	padding: 2rem;
 }
 
@@ -223,9 +224,11 @@ main {
 	color: var(--color-text);
 }
 
+/* Desde Cero Radio*/
+
 .radio-descripcion {
 	max-width: 800px;
-	margin: 0 auto 3rem;
+	margin: 0 auto;
 	padding: 0 20px;
 }
 
@@ -247,7 +250,7 @@ main {
 
 .columnas-container {
 	max-width: 900px;
-	max-height: calc(100vh - 140px);
+	max-height: calc(100vh - 20vh);
 	margin: 0 auto;
 	padding: 0 20px;
 	overflow-y: auto;
@@ -346,7 +349,7 @@ main {
 
 .historia-container {
 	max-width: 800px;
-	margin: 100px auto 80px;
+	margin: 1rem auto;
 	padding: 2rem;
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 15px;
@@ -356,8 +359,8 @@ main {
 .historia-container h1 {
 	font-size: 3rem;
 	color: var(--color-text);
+	margin: 0 auto 1rem;
 	text-align: center;
-	margin-bottom: 2rem;
 	font-family: var(--font-primary);
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -442,7 +445,7 @@ main {
 .artistas-container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 4rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -513,10 +516,9 @@ main {
 
 .form-container {
 	max-width: 1200px;
-	margin: 2rem auto;
-	padding: 2rem;
+	margin: 1rem auto;
+	padding: 1rem;
 	text-align: center;
-	margin-bottom: 80px;
 }
 
 .forms-wrapper {
@@ -524,7 +526,6 @@ main {
 	gap: 2rem;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 2rem;
 }
 
 .form-section {
@@ -604,7 +605,7 @@ main {
 .podcast-container {
 	max-width: 1200px;
 	margin: 2rem auto;
-	padding: 2rem;
+	padding: 1rem;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 15px;
@@ -739,6 +740,13 @@ footer a {
 		min-height: auto;
 	}
 
+	/* Main Content */
+	main {
+		padding: 0 10px;
+		margin-top: 15vh;
+		margin-bottom: 0;
+	}
+
 	nav {
 		padding: 5px 10px;
 		flex-direction: column;
@@ -783,13 +791,6 @@ footer a {
 		white-space: normal;
 		line-height: 1.2;
 		height: 100%;
-	}
-
-	/* Main Content */
-	main {
-		padding: 0 10px;
-		margin-top: 60px;
-		margin-bottom: 0;
 	}
 
 	/* Hero Section */
@@ -891,7 +892,7 @@ footer a {
 
 	/* Artistas */
 	.artistas-container {
-		padding: 2rem 0.5rem;
+		padding: 1rem 0.5rem;
 	}
 
 	.artistas-container h1 {
